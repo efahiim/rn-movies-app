@@ -14,7 +14,8 @@ const SearchBar = ({placeholder, onPress, textValue, onChange}: Props) => {
         <View className="flex-row items-center bg-dark-200 rounded-full px-5 py-5">
             <Image source={icons.search} className="size-5" resizeMode="contain" tintColor="#ab8bff"/>
             <TextInput
-                onPress={onPress ? onPress : () => console.log("Pressed search bar")}
+                onPress={onPress ? onPress : () => {
+                }}
                 placeholder={placeholder}
                 value={textValue}
                 onChangeText={onChange}
